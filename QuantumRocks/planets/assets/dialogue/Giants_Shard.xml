@@ -1,0 +1,114 @@
+<DialogueTree xmlns:xsi="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="https://github.com/Outer-Wilds-New-Horizons/new-horizons/blob/main/NewHorizons/Schemas/dialogue_schema.xsd">
+	<NameField>Giants Shard</NameField>
+
+	<DialogueNode>
+		<Name>Start</Name>
+		<EntryCondition>DEFAULT</EntryCondition>
+		<Dialogue>
+			<Page>Meet_Giants_Shard_1</Page>
+		</Dialogue>
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>Meet_Giants_Shard_2</Text>
+				<DialogueTarget>1</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+	
+	<DialogueNode>
+		<Name>1</Name>
+		<Dialogue>
+			<Page>Meet_Giants_Shard_3</Page>
+			<Page>Meet_Giants_Shard_4</Page>
+		</Dialogue>
+		<DialogueTarget>QUESTIONS</DialogueTarget>
+		
+		<SetCondition>TALKED_GIANTS</SetCondition>
+		<RevealFacts>
+			<FactID>SanBaiMing_GIANTS_SHARD_1</FactID>
+		</RevealFacts>
+	</DialogueNode>
+	
+	<DialogueNode>
+		<Name>QUESTIONS</Name>
+		<EntryCondition>TALKED_GIANTS</EntryCondition>
+		
+		<Dialogue>
+			<Page>Ask_Giants_Shard</Page>
+		</Dialogue>
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>Why_Stay_Giants</Text>
+				<DialogueTarget>QUESTIONS_1</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>Why_Tower_Quantum</Text>
+				<DialogueTarget>QUESTIONS_2</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>Why_Quantum_Signal</Text>
+				<DialogueTarget>QUESTIONS_3</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>How_Get_Here</Text>
+				<DialogueTarget>QUESTIONS_4</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>No_More_Question</Text>
+				<DialogueTarget>END_QUESTIONS</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+	
+	<DialogueNode>
+		<Name>END_QUESTIONS</Name>
+		<Dialogue>
+			<Page>Giants_Bye</Page>
+		</Dialogue>
+	</DialogueNode>
+	
+	<DialogueNode>
+		<Name>QUESTIONS_1</Name>
+		<Dialogue>
+			<Page>Giants_Shard_Answer_1_1</Page>
+			<Page>Giants_Shard_Answer_1_2</Page>
+			<Page>Giants_Shard_Answer_1_3</Page>
+			<Page>Giants_Shard_Answer_1_4</Page>
+		</Dialogue>
+		<DialogueTarget>QUESTIONS</DialogueTarget>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>QUESTIONS_2</Name>
+		<Dialogue>
+			<Page>Giants_Shard_Answer_2_1</Page>
+			<Page>Giants_Shard_Answer_2_2</Page>
+		</Dialogue>
+		<DialogueTarget>QUESTIONS</DialogueTarget>
+		
+		<RevealFacts>
+			<FactID>SanBaiMing_GIANTS_SHARD_2</FactID>
+		</RevealFacts>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>QUESTIONS_3</Name>
+		<Dialogue>
+			<Page>Giants_Shard_Answer_3_1</Page>
+			<Page>Giants_Shard_Answer_3_2</Page>
+		</Dialogue>
+		<DialogueTarget>QUESTIONS</DialogueTarget>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>QUESTIONS_4</Name>
+		<Dialogue>
+			<Page>Giants_Shard_Answer_4_1</Page>
+			<Page>Giants_Shard_Answer_4_2</Page>
+		</Dialogue>
+		<DialogueTarget>QUESTIONS</DialogueTarget>
+		<RevealFacts>
+			<FactID>SanBaiMing_BRITTLE_QUANTUM_SHARD_RUMOR</FactID>
+		</RevealFacts>
+	</DialogueNode>
+</DialogueTree>

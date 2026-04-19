@@ -1,0 +1,61 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/body_schema.json",
+
+  "name": "Timber Hearth",
+  "Props": {
+    "details": [
+      {
+        "rename": "Observatory Shard",
+        "path": "Sector_TH/Sector_Village/Sector_Observatory/Interactables_Observatory/VisibleFrom_Village/QuantumShard_Exhibit/QuantumShard_Root/Rock_TH_Observatory_QRock/Rocks_TH_Observatory_QRock/ConversationZone",
+        "position": {"x": 0,"y": 0,"z": 0},
+        "rotation": {"x": 0,"y": 0,"z": 0}
+      },
+      {
+        "rename": "Timber Hearth Shard",
+        "path": "Sector_TH/Sector_QuantumGrove/Interactables_QuantumGrove/QuantumShard/Rock_TH_Grove_QRock/Rocks_TH_GROVE_QRock/ConversationZone",
+        "position": {"x": 0,"y": 0,"z": 0},
+        "rotation": {"x": 0,"y": 0,"z": 0}
+      }
+    ],
+
+    "dialogue": [
+      //{
+      //  "xmlFile": "planets/assets/dialogue/Slate_Hint.xml",
+      //  "radius": 0,
+      //  "remoteTrigger": {
+      //    "position": {
+      //      "x": 9.851137,
+      //      "y": -42.59065,
+      //      "z": 186.2374
+      //    },
+      //    "radius": 3,
+      //    "prereqCondition": "DEFAULT",
+      //    "blockAfterPersistentCondition": ""
+      //  }
+      //},
+      {
+        "xmlFile": "planets/assets/dialogue/Slate.xml",
+        "pathToExistingDialogue": "Sector_TH/Sector_Village/Sector_StartingCamp/Characters_StartingCamp/Villager_HEA_Slate/ConversationZone_RSci"
+      },
+      {
+        "parentPath": "Sector_TH/Sector_Village/Sector_Observatory/Interactables_Observatory/VisibleFrom_Village/QuantumShard_Exhibit/QuantumShard_Root/Rock_TH_Observatory_QRock/Rocks_TH_Observatory_QRock",
+        "radius": 3,
+        "position": {"x": 0,"y": 0,"z": 0},
+        "isRelativeToParent": true,
+        "xmlFile": "planets/assets/dialogue/Observatory_Shard.xml"
+      },
+      {
+        "parentPath": "Sector_TH/Sector_QuantumGrove/Interactables_QuantumGrove/QuantumShard/Rock_TH_Grove_QRock/Rocks_TH_GROVE_QRock",
+        "radius": 3,
+        "position": {"x": 0,"y": 3,"z": 0},
+        "isRelativeToParent": true,
+        "xmlFile": "planets/assets/dialogue/Timber_Shard.xml"
+      }
+    ]
+  },
+
+  "ShipLog": {
+    "xmlFile": "planets/assets/shiplogs/TimberHearth.xml",
+    "spriteFolder": "planets/assets/shiplogs/sprites"
+  }
+}

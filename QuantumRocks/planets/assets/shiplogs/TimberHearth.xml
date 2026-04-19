@@ -1,0 +1,52 @@
+<AstroObjectEntry xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/shiplog_schema.xsd">
+    <ID>TIMBER_HEARTH</ID>
+	
+	<Entry>
+		<ID>SanBaiMing_WEIRD_QUANTUM_SHARD</ID>
+		<Name>Quantum_Rocks</Name>
+
+		<Curiosity>SanBaiMing_QUANTUM_ROCKS</Curiosity>
+		<IsCuriosity/>
+
+		<RumorFact>
+			<ID>SanBaiMing_WEIRD_QUANTUM_SHARD_RUMOR</ID>
+			<SourceID>SanBaiMing_WEIRD_QUANTUM_SHARD</SourceID>
+			<RumorName>Weird_Shard</RumorName>
+			<Text>Observatory_Shard_Rumor</Text>
+		</RumorFact>
+
+		<ExploreFact>
+			<ID>SanBaiMing_OBSERVATORY_SHARD_1</ID>
+			<Text>Observatory_Shard_1</Text>
+		</ExploreFact>
+		<ExploreFact>
+			<ID>SanBaiMing_OBSERVATORY_SHARD_2</ID>
+			<Text>Observatory_Shard_2</Text>
+		</ExploreFact>
+	</Entry>
+	
+	<Entry>
+		<ID>SanBaiMing_TIMBER_QUANTUM_SHARD</ID>
+		<Name>Timber_Quantum_Shard</Name>
+
+		<Curiosity>SanBaiMing_QUANTUM_ROCKS</Curiosity>
+		<IsCuriosity/>
+
+		<RumorFact>
+			<ID>SanBaiMing_TIMBER_QUANTUM_SHARD_RUMOR</ID>
+			<SourceID>SanBaiMing_WEIRD_QUANTUM_SHARD</SourceID>
+			<RumorName>Timber_Quantum_Shard?</RumorName>
+			<Text>Timber_Shard_Rumor</Text>
+		</RumorFact>
+
+		<ExploreFact>
+			<ID>SanBaiMing_TIMBER_SHARD_1</ID>
+			<Text>Timber_Shard_1</Text>
+		</ExploreFact>
+		<ExploreFact>
+			<ID>SanBaiMing_TIMBER_SHARD_2</ID>
+			<Text>Timber_Shard_2</Text>
+		</ExploreFact>
+	</Entry>
+
+</AstroObjectEntry>

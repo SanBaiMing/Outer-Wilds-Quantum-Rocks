@@ -1,0 +1,35 @@
+<AstroObjectEntry xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/shiplog_schema.xsd">
+    <ID>QUANTUM_MOON</ID>
+	
+	<Entry>
+		<ID>SanBaiMing_QUANTUM_MOON_SPACESHIP</ID>
+		<Name>Quantum_Moon_Spaceship</Name>
+
+		<Curiosity>SanBaiMing_QUANTUM_ROCKS</Curiosity>
+		<IsCuriosity/>
+
+		<RumorFact>
+			<ID>SanBaiMing_QUANTUM_MOON_SPACESHIP_RUMOR</ID>
+			<SourceID>SanBaiMing_WEIRD_QUANTUM_SHARD</SourceID>
+			<RumorName>Quantum_Moon_Spaceship?</RumorName>
+			<Text>Quantum_Moon_Rumor</Text>
+		</RumorFact>
+
+		<ExploreFact>
+			<ID>SanBaiMing_QUANTUM_MOON_1</ID>
+			<Text>Quantum_Moon_1</Text>
+		</ExploreFact>
+		<ExploreFact>
+			<ID>SanBaiMing_QUANTUM_MOON_2</ID>
+			<Text>Quantum_Moon_2</Text>
+		</ExploreFact>
+		<ExploreFact>
+			<ID>SanBaiMing_QUANTUM_MOON_3</ID>
+			<Text>Quantum_Moon_3</Text>
+		</ExploreFact>
+		<ExploreFact>
+			<ID>SanBaiMing_QUANTUM_MOON_4</ID>
+			<Text>Quantum_Moon_4</Text>
+		</ExploreFact>
+	</Entry>
+</AstroObjectEntry>

@@ -1,0 +1,59 @@
+<DialogueTree xmlns:xsi="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="https://github.com/Outer-Wilds-New-Horizons/new-horizons/blob/main/NewHorizons/Schemas/dialogue_schema.xsd">
+	<NameField>Ernesto</NameField>
+
+	<DialogueNode>
+		<Name>Start</Name>
+		<EntryCondition>DEFAULT</EntryCondition>
+		<Dialogue>
+			<Page>Ernesto_Hi_1</Page>
+		</Dialogue>
+		<DialogueTarget>QUESTIONS</DialogueTarget>
+	</DialogueNode>
+	
+	<DialogueNode>
+		<Name>QUESTIONS</Name>
+		
+		<Dialogue>
+			<Page>Ernesto_Hi_2</Page>
+		</Dialogue>
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>Ask_Ernesto_1</Text>
+				<DialogueTarget>QUESTIONS_1</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>Ask_Ernesto_2</Text>
+				<DialogueTarget>QUESTIONS_2</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>Ask_Ernesto_3</Text>
+				<DialogueTarget>END_QUESTIONS</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+	
+	<DialogueNode>
+		<Name>END_QUESTIONS</Name>
+		<Dialogue>
+			<Page>Ernesto_Answer_3</Page>
+		</Dialogue>
+	</DialogueNode>
+	
+	<DialogueNode>
+		<Name>QUESTIONS_1</Name>
+		<Dialogue>
+			<Page>Ernesto_Answer_1_1</Page>
+			<Page>Ernesto_Answer_1_2</Page>
+		</Dialogue>
+		<DialogueTarget>QUESTIONS</DialogueTarget>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>QUESTIONS_2</Name>
+		<Dialogue>
+			<Page>Ernesto_Answer_2</Page>
+		</Dialogue>
+		<DialogueTarget>QUESTIONS</DialogueTarget>
+	</DialogueNode>
+
+</DialogueTree>

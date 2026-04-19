@@ -1,0 +1,67 @@
+{
+	"$schema": "https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/star_system_schema.json",
+	"entryPositions": [
+		{
+			"id": "SanBaiMing_WEIRD_QUANTUM_SHARD",
+			"position": {
+				"x": 800,
+				"y": 1800
+			}
+		},
+		{
+			"id": "SanBaiMing_HOURGLASS_QUANTUM_SHARD",
+			"position": {
+				"x": 200,
+				"y": 1600
+			}
+		},
+		{
+			"id": "SanBaiMing_TIMBER_QUANTUM_SHARD",
+			"position": {
+				"x": 500,
+				"y": 1500
+			}
+		},
+		{
+			"id": "SanBaiMing_BRITTLE_QUANTUM_SHARD",
+			"position": {
+				"x": 800,
+				"y": 1400
+			}
+		},
+		{
+			"id": "SanBaiMing_GIANTS_QUANTUM_SHARD",
+			"position": {
+				"x": 1100,
+				"y": 1500
+			}
+		},
+		{
+			"id": "SanBaiMing_QUANTUM_MOON_SPACESHIP",
+			"position": {
+				"x": 1400,
+				"y": 1600
+			}
+		}
+	],
+	"curiosities": [
+		{
+			"id": "SanBaiMing_QUANTUM_ROCKS",
+			"color": {
+				"r": 0,
+				"g": 255,
+				"b": 255,
+				"a": 255
+			},
+			"highlightColor": {
+				"r": 132,
+				"g": 255,
+				"b": 255,
+				"a": 255
+			}
+		}
+	],
+	//"initialReveal": [
+	//	"SanBaiMing_WEIRD_QUANTUM_SHARD_RUMOR"
+	//]
+}

@@ -1,0 +1,94 @@
+<DialogueTree xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/dialogue_schema.xsd">
+
+	<DialogueNode>
+		<Name>Scientist5</Name>
+
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>Ask_Slate</Text>
+				<DialogueTarget>QUESTIONS_1</DialogueTarget>
+			</DialogueOption>
+			
+			<DialogueOption>
+				<Text>Answer_Slate_1</Text>
+				<RequiredLogCondition>SanBaiMing_OBSERVATORY_SHARD_1</RequiredLogCondition>
+				<DialogueTarget>QUESTIONS_2</DialogueTarget>
+			</DialogueOption>
+			
+			<DialogueOption>
+				<Text>Answer_Slate_2</Text>
+				<RequiredLogCondition>SanBaiMing_QUANTUM_MOON_1</RequiredLogCondition>
+				<DialogueTarget>QUESTIONS_3</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>QUESTIONS_1</Name>
+		<Dialogue>
+			<Page>Slate_Quantum_1</Page>
+			<Page>Slate_Quantum_2</Page>
+		</Dialogue>
+
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>Ok_Move_On</Text>
+				<DialogueTarget>END_QUESTIONS</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+		
+		<RevealFacts>
+			<FactID>SanBaiMing_WEIRD_QUANTUM_SHARD_RUMOR</FactID>
+		</RevealFacts>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>QUESTIONS_2</Name>
+		<Dialogue>
+			<Page>Slate_Answer_1_1</Page>
+			<Page>Slate_Answer_1_2</Page>
+		</Dialogue>
+		
+		<DialogueOptionsList>
+		    <DialogueOption>
+			    <Text>Not_Noob</Text>
+			    <DialogueTarget>QUESTIONS_2_1</DialogueTarget>
+		    </DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+	
+	<DialogueNode>
+		<Name>QUESTIONS_3</Name>
+		<Dialogue>
+			<Page>Slate_Answer_2_1</Page>
+			<Page>Slate_Answer_2_2</Page>
+			<Page>What_else</Page>
+		</Dialogue>
+		
+		<DialogueOptionsList>
+			<ReuseDialogueOptionsListFrom>Scientist5</ReuseDialogueOptionsListFrom>
+		</DialogueOptionsList>
+	</DialogueNode>
+
+
+	<DialogueNode>
+		<Name>QUESTIONS_2_1</Name>
+		<Dialogue>
+			<Page>Slate_Answer_4_1</Page>
+			<Page>Slate_Answer_4_2</Page>
+			<Page>What_else</Page>
+		</Dialogue>
+		
+	    <DialogueOptionsList>
+		    <ReuseDialogueOptionsListFrom>Scientist5</ReuseDialogueOptionsListFrom>
+	    </DialogueOptionsList>
+	</DialogueNode>
+	
+	<DialogueNode>
+		<Name>END_QUESTIONS</Name>
+		<Dialogue>
+			<Page>Good_Luck</Page>
+		</Dialogue>
+	</DialogueNode>
+	
+</DialogueTree>

@@ -1,0 +1,101 @@
+<DialogueTree xmlns:xsi="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="https://github.com/Outer-Wilds-New-Horizons/new-horizons/blob/main/NewHorizons/Schemas/dialogue_schema.xsd">
+	<NameField>Observatory Shard</NameField>
+
+	<DialogueNode>
+		<Name>Start</Name>
+		<EntryCondition>DEFAULT</EntryCondition>
+		<Dialogue>
+			<Page>......</Page>
+		</Dialogue>
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>Hi_Observatory_Shard_1</Text>
+				<RequiredLogCondition>SanBaiMing_OBSERVATORY_SHARD_1</RequiredLogCondition>
+				<DialogueTarget>Start_1</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>......</Text>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+		
+	<DialogueNode>
+		<Name>Start_1</Name>
+		<Dialogue>
+			<Page>Observatory_Shard_1_Hi</Page>
+			<Page>Observatory_Shard_1_0</Page>
+		</Dialogue>
+		<DialogueTarget>QUESTIONS</DialogueTarget>
+
+		<RevealFacts>
+			<FactID>SanBaiMing_QUANTUM_MOON_1</FactID>
+		</RevealFacts>
+		<SetCondition>TALKED_MOON_1</SetCondition>
+	</DialogueNode>
+	
+	<DialogueNode>
+		<Name>QUESTIONS</Name>
+		<EntryCondition>TALKED_MOON_1</EntryCondition>
+		
+		<Dialogue>
+			<Page>Ask_Observatory_Shard_1</Page>
+		</Dialogue>
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>Ask_Observatory_Shard_1_1</Text>
+				<DialogueTarget>QUESTIONS_1</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>Ask_Observatory_Shard_1_2</Text>
+				<DialogueTarget>QUESTIONS_2</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>Ask_Observatory_Shard_1_3</Text>
+				<DialogueTarget>QUESTIONS_3</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>No_More_Question</Text>
+				<DialogueTarget>END_QUESTIONS</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+	
+	<DialogueNode>
+		<Name>END_QUESTIONS</Name>
+		<Dialogue>
+			<Page>Bye</Page>
+		</Dialogue>
+	</DialogueNode>
+	
+	<DialogueNode>
+		<Name>QUESTIONS_1</Name>
+		<Dialogue>
+			<Page>Observatory_Shard_1_Answer_1_1</Page>
+			<Page>Observatory_Shard_1_Answer_1_2</Page>
+			<Page>Observatory_Shard_1_Answer_1_3</Page>
+		</Dialogue>
+		<DialogueTarget>QUESTIONS</DialogueTarget>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>QUESTIONS_2</Name>
+		<Dialogue>
+			<Page>Observatory_Shard_1_Answer_2_1</Page>
+			<Page>Observatory_Shard_1_Answer_2_2</Page>
+		</Dialogue>
+		<DialogueTarget>QUESTIONS</DialogueTarget>
+		
+		<RevealFacts>
+			<FactID>SanBaiMing_QUANTUM_MOON_2</FactID>
+		</RevealFacts>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>QUESTIONS_3</Name>
+		<Dialogue>
+			<Page>Observatory_Shard_1_Answer_3_1</Page>
+		</Dialogue>
+		<DialogueTarget>QUESTIONS</DialogueTarget>
+	</DialogueNode>
+
+</DialogueTree>

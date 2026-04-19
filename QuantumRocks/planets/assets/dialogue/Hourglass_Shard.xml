@@ -1,0 +1,112 @@
+<DialogueTree xmlns:xsi="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="https://github.com/Outer-Wilds-New-Horizons/new-horizons/blob/main/NewHorizons/Schemas/dialogue_schema.xsd">
+	<NameField>Hourglass Shard</NameField>
+
+	<DialogueNode>
+		<Name>Start</Name>
+		<EntryCondition>DEFAULT</EntryCondition>
+		<Dialogue>
+			<Page>I_Know_You_1</Page>
+			<Page>I_Know_You_2</Page>
+			<Page>Hourglass_Shard_Introduction</Page>
+		</Dialogue>
+		<DialogueTarget>QUESTIONS</DialogueTarget>
+		<SetCondition>TALKED_HOURGLASS</SetCondition>
+
+		<RevealFacts>
+			<FactID>SanBaiMing_HOURGLASS_SHARD_1</FactID>
+		</RevealFacts>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>QUESTIONS</Name>
+		<EntryCondition>TALKED_HOURGLASS</EntryCondition>
+
+		<Dialogue>
+			<Page>Ask_Hourglass_Shard</Page>
+		</Dialogue>
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>Why_Stay_Hourglass</Text>
+				<DialogueTarget>QUESTIONS_1</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>What_If_Sand_Block</Text>
+				<DialogueTarget>QUESTIONS_2</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>Why_Skeleton_Quantum</Text>
+				<DialogueTarget>QUESTIONS_3</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>Know_Quantum_Rule</Text>
+				<DialogueTarget>QUESTIONS_4</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>No_More_Question</Text>
+				<DialogueTarget>END_QUESTIONS</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>END_QUESTIONS</Name>
+		<Dialogue>
+			<Page>Hourglass_Bye</Page>
+		</Dialogue>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>QUESTIONS_1</Name>
+		<Dialogue>
+			<Page>Hourglass_Shard_Answer_1_1</Page>
+			<Page>Hourglass_Shard_Answer_1_2</Page>
+		</Dialogue>
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>Answer_Hourglass_Shard_1</Text>
+				<DialogueTarget>QUESTIONS</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>QUESTIONS_2</Name>
+		<Dialogue>
+			<Page>Hourglass_Shard_Answer_2_1</Page>
+			<Page>Hourglass_Shard_Answer_2_2</Page>
+		</Dialogue>
+		<DialogueTarget>QUESTIONS</DialogueTarget>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>QUESTIONS_3</Name>
+		<Dialogue>
+			<Page>Hourglass_Shard_Answer_3_1</Page>
+			<Page>Hourglass_Shard_Answer_3_2</Page>
+		</Dialogue>
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>Answer_Hourglass_Shard_3</Text>
+				<DialogueTarget>QUESTIONS</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+		
+		<RevealFacts>
+			<FactID>SanBaiMing_HOURGLASS_SHARD_2</FactID>
+		</RevealFacts>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>QUESTIONS_4</Name>
+		<Dialogue>
+			<Page>Hourglass_Shard_Answer_4_1</Page>
+			<Page>Hourglass_Shard_Answer_4_2</Page>
+		</Dialogue>
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>Answer_Hourglass_Shard_4</Text>
+				<DialogueTarget>QUESTIONS</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+</DialogueTree>

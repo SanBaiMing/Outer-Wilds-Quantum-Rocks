@@ -1,0 +1,119 @@
+<DialogueTree xmlns:xsi="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="https://github.com/Outer-Wilds-New-Horizons/new-horizons/blob/main/NewHorizons/Schemas/dialogue_schema.xsd">
+	<NameField>Timber Shard</NameField>
+
+	<DialogueNode>
+		<Name>Start</Name>
+		<EntryCondition>DEFAULT</EntryCondition>
+		<Dialogue>
+			<Page>......</Page>
+		</Dialogue>
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>Try_Communicate</Text>
+				<DialogueTarget>1</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+	
+	<DialogueNode>
+		<Name>1</Name>
+		<Dialogue>
+			<Page>......</Page>
+		</Dialogue>
+	    <DialogueOptionsList>
+		    <DialogueOption>
+			    <Text>Orange_Let</Text>
+			    <DialogueTarget>2</DialogueTarget>
+		    </DialogueOption>
+	    </DialogueOptionsList>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>2</Name>
+		<Dialogue>
+			<Page>Timber_Orange</Page>
+			<Page>Timber_Shard_Introduction</Page>
+		</Dialogue>
+		<DialogueTarget>QUESTIONS</DialogueTarget>
+		
+		<SetCondition>TALKED_TIMBER</SetCondition>
+		<RevealFacts>
+			<FactID>SanBaiMing_TIMBER_SHARD_1</FactID>
+		</RevealFacts>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>QUESTIONS</Name>
+		<EntryCondition>TALKED_TIMBER</EntryCondition>
+		
+		<Dialogue>
+			<Page>Ask_Timber_Shard</Page>
+		</Dialogue>
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>How_Know_Orange</Text>
+				<DialogueTarget>QUESTIONS_1</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>Why_Stay_Timber</Text>
+				<DialogueTarget>QUESTIONS_2</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>Why_Quantum</Text>
+				<DialogueTarget>QUESTIONS_3</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>No_More_Question</Text>
+				<DialogueTarget>END_QUESTIONS</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+	
+	<DialogueNode>
+		<Name>END_QUESTIONS</Name>
+		<Dialogue>
+			<Page>Timber_Bye</Page>
+		</Dialogue>
+	</DialogueNode>
+	
+	<DialogueNode>
+		<Name>QUESTIONS_1</Name>
+		<Dialogue>
+			<Page>Timber_Shard_Answer_1_1</Page>
+			<Page>Timber_Shard_Answer_1_2</Page>
+		</Dialogue>
+		<DialogueTarget>QUESTIONS</DialogueTarget>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>QUESTIONS_2</Name>
+		<Dialogue>
+			<Page>Timber_Shard_Answer_2</Page>
+		</Dialogue>
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>Answer_Timber_Shard_2</Text>
+				<DialogueTarget>QUESTIONS</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>QUESTIONS_3</Name>
+		<Dialogue>
+			<Page>Timber_Shard_Answer_3_1</Page>
+			<Page>Timber_Shard_Answer_3_2</Page>
+		</Dialogue>
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>Answer_Timber_Shard_3</Text>
+				<DialogueTarget>QUESTIONS</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+		
+		<RevealFacts>
+			<FactID>SanBaiMing_TIMBER_SHARD_2</FactID>
+		</RevealFacts>
+	</DialogueNode>
+	
+</DialogueTree>

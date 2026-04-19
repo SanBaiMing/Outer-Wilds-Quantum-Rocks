@@ -1,0 +1,261 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/body_schema.json",
+
+  "name": "Quantum Moon",
+
+  "Props": {
+    "socketQuantumGroups": [
+      {
+        "details": [
+          {
+            "rename": "ObservatoryShard1",
+            "path": "Sector_TH/Sector_Village/Sector_Observatory/Interactables_Observatory/VisibleFrom_Village/QuantumShard_Exhibit/QuantumShard_Root/Rock_TH_Observatory_QRock/Rocks_TH_Observatory_QRock",
+            "parentPath": "Sector_QuantumMoon/State_EYE",
+            //"rotation": {"x": 295,"y": 0,"z": 0},
+            //"alignWithGravity": true,
+            //"alignRadial": true,
+            "randomizeYRotation": false,
+            "alignWithGravity": false
+          }
+        ],
+        "sockets": [
+          {
+            "rename": "Socket 0",
+            "position": {
+              "x": -0.2730293,
+              "y": 68.26367,
+              "z": 18.24529
+            },
+            "rotation": {
+              "x": 295,
+              "y": 0,
+              "z": 0
+            },
+            "isRelativeToParent": true
+          },
+          {
+            "rename": "Socket 1",
+            "position": {
+              "x": 2.294838,
+              "y": 65.91795,
+              "z": 29.06681
+            },
+            "rotation": {
+              "x": 295,
+              "y": 0,
+              "z": 0
+            },
+            "isRelativeToParent": true
+          },
+          {
+            "rename": "Socket 2",
+            "position": {
+              "x": -5.989672,
+              "y": 64.99385,
+              "z": 30.03389
+            },
+            "rotation": {
+              "x": 295,
+              "y": 0,
+              "z": 0
+            },
+            "isRelativeToParent": true
+          }
+        ]
+      },
+      {
+        "details": [
+          {
+            "rename": "Ernesto",
+            "path": "Anglerfish_Body/Beast_Anglerfish",
+            "parentPath": "Sector_QuantumMoon/State_EYE",
+            "randomizeYRotation": false,
+            "alignWithGravity": false,
+            "scale": 0.01,
+            "removeChildren": [
+              "B_angler_root/B_angler_body01/B_angler_body02/B_angler_antenna01/B_angler_antenna02/B_angler_antenna03/B_angler_antenna04/B_angler_antenna05/B_angler_antenna06/B_angler_antenna07/B_angler_antenna08/B_angler_antenna09/B_angler_antenna10/B_angler_antenna11/B_angler_antenna12_end"
+            ]
+          }
+        ],
+        "sockets": [
+          {
+            "rename": "Socket 0",
+            "position": {
+              "x": 10.99206,
+              "y": -71.83303,
+              "z": -14.09553
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 180
+            },
+            "isRelativeToParent": true
+          },
+          {
+            "rename": "Socket 1",
+            "position": {
+              "x": -24.00266,
+              "y": -68.63271,
+              "z": 6.914825
+            },
+            "rotation": {
+              "x": 0,
+              "y": 166.2424,
+              "z": 200
+            },
+            "isRelativeToParent": true
+          },
+          {
+            "rename": "Socket 2",
+            "position": {
+              "x": -6.206677,
+              "y": -66.73331,
+              "z": -24.78027
+            },
+            "rotation": {
+              "x": 19.35563,
+              "y": 346.8632,
+              "z": 180
+            },
+            "isRelativeToParent": true
+          }
+        ]
+      },
+      {
+        "details": [
+          {
+            "rename": "ObservatoryShard2",
+            "path": "Sector_TH/Sector_Village/Sector_Observatory/Interactables_Observatory/VisibleFrom_Village/QuantumShard_Exhibit/QuantumShard_Root/Rock_TH_Observatory_QRock/Rocks_TH_Observatory_QRock",
+            "parentPath": "Sector_QuantumMoon/State_EYE",
+            "randomizeYRotation": false,
+            "alignWithGravity": false
+          }
+        ],
+        "sockets": [
+          {
+            "rename": "Socket 0",
+            "position": {
+              "x": -3.10749,
+              "y": -69.1294,
+              "z": 11.85851
+            },
+            "rotation": {
+              "x": 90,
+              "y": 0,
+              "z": 0
+            },
+            "isRelativeToParent": true
+          },
+          {
+            "rename": "Socket 1",
+            "position": {
+              "x": -1.976185,
+              "y": -69.63265,
+              "z": 7.157371
+            },
+            "rotation": {
+              "x": 90,
+              "y": 0,
+              "z": 0
+            },
+            "isRelativeToParent": true
+          },
+          {
+            "rename": "Socket 2",
+            "position": {
+              "x": -11.17239,
+              "y": -69.1031,
+              "z": 3.431087
+            },
+            "rotation": {
+              "x": 90,
+              "y": 0,
+              "z": 0
+            },
+            "isRelativeToParent": true
+          }
+        ]
+      }
+    ],
+
+    "details": [
+      {
+        "rename": "ObservatoryShardCollision",
+        "path": "Sector_TH/Sector_Village/Sector_Observatory/Interactables_Observatory/VisibleFrom_Village/QuantumShard_Exhibit/QuantumShard_Root/Rock_TH_Observatory_QRock/Collider_TH_Observatory_QRock",
+        "parentPath": "Sector_QuantumMoon/State_EYE/ObservatoryShard1",
+        "isRelativeToParent": true
+      },
+      {
+        "rename": "ErnestoCollision",
+        "path": "Anglerfish_Body/Beast_Anglerfish_Collision",
+        "parentPath": "Sector_QuantumMoon/State_EYE/Ernesto",
+        "scale": 0.01,
+        "isRelativeToParent": true
+      },
+      {
+        "rename": "ObservatoryShardCollision",
+        "path": "Sector_TH/Sector_Village/Sector_Observatory/Interactables_Observatory/VisibleFrom_Village/QuantumShard_Exhibit/QuantumShard_Root/Rock_TH_Observatory_QRock/Collider_TH_Observatory_QRock",
+        "parentPath": "Sector_QuantumMoon/State_EYE/ObservatoryShard2",
+        "isRelativeToParent": true
+      }
+    ],
+
+    "dialogue": [
+      {
+        "parentPath": "Sector_QuantumMoon/State_EYE/ObservatoryShard1",
+        "radius": 2,
+        "position": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "isRelativeToParent": true,
+        "xmlFile": "planets/assets/dialogue/Quantum_Moon_Observatory_Shard_1.xml"
+      },
+      {
+        "parentPath": "Sector_QuantumMoon/State_EYE/Ernesto",
+        "radius": 2,
+        "position": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "isRelativeToParent": true,
+        "xmlFile": "planets/assets/dialogue/Quantum_Ernesto.xml"
+      },
+      {
+        "parentPath": "Sector_QuantumMoon/State_EYE/ObservatoryShard2",
+        "radius": 2,
+        "position": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "isRelativeToParent": true,
+        "xmlFile": "planets/assets/dialogue/Quantum_Moon_Observatory_Shard_2.xml"
+      }
+    ]
+  },
+  "Volumes": {
+    "creditsVolume": [
+      {
+        "rename": "QuantumRocksGameOverVolume",
+        "parentPath": "Sector_QuantumMoon/State_EYE",
+        "radius": 20,
+        "deathType": "meditation",
+        "activationCondition": "QUANTUM_ROCKS_GAME_OVER",
+        "gameOverText": "Quantum_Rocks_GameOverText",
+        "position": {
+          "x": -3.391267,
+          "y": -108.71471,
+          "z": 5.111881
+        }
+      }
+    ]
+  },
+  "ShipLog": {
+    "xmlFile": "planets/assets/shiplogs/QuantumMoon.xml",
+    "spriteFolder": "planets/assets/shiplogs/sprites"
+  }
+}

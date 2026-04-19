@@ -1,0 +1,140 @@
+<DialogueTree xmlns:xsi="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="https://github.com/Outer-Wilds-New-Horizons/new-horizons/blob/main/NewHorizons/Schemas/dialogue_schema.xsd">
+	<NameField>Brittle Shard</NameField>
+
+	<DialogueNode>
+		<Name>Start</Name>
+		<EntryCondition>DEFAULT</EntryCondition>
+	    <Dialogue>
+		    <Page>......</Page>
+	    </Dialogue>
+	    <DialogueOptionsList>
+		    <DialogueOption>
+			    <Text>Try_Talk</Text>
+			    <DialogueTarget>1</DialogueTarget>
+		    </DialogueOption>
+	    </DialogueOptionsList>
+	</DialogueNode>
+	
+	<DialogueNode>
+		<Name>1</Name>
+		<Dialogue>
+			<Page>Brittle_Orange</Page>
+			<Page>Brittle_Shard_Introduction</Page>
+		</Dialogue>
+		<DialogueTarget>QUESTIONS</DialogueTarget>
+		<SetCondition>TALKED_BRITTLE</SetCondition>
+
+		<RevealFacts>
+			<FactID>SanBaiMing_BRITTLE_SHARD_1</FactID>
+		</RevealFacts>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>QUESTIONS</Name>
+		<EntryCondition>TALKED_BRITTLE</EntryCondition>
+
+		<Dialogue>
+			<Page>Ask_Brittle_Shard</Page>
+		</Dialogue>
+
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>Why_Stay_Brittle</Text>
+				<DialogueTarget>QUESTIONS_1</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>Why_Trees_Quantum</Text>
+				<DialogueTarget>QUESTIONS_2</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>Structure_On_You</Text>
+				<DialogueTarget>QUESTIONS_3</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>Know_Tower</Text>
+				<DialogueTarget>QUESTIONS_4</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>What_Quantum_Moon</Text>
+				<DialogueTarget>QUESTIONS_5</DialogueTarget>
+				<RequiredCondition>TALKED_QUANTUM_MOON</RequiredCondition>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>No_More_Question</Text>
+				<DialogueTarget>END_QUESTIONS</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>END_QUESTIONS</Name>
+		<Dialogue>
+			<Page>Brittle_Bye</Page>
+		</Dialogue>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>QUESTIONS_1</Name>
+		<Dialogue>
+			<Page>Brittle_Shard_Answer_1_1</Page>
+			<Page>Brittle_Shard_Answer_1_2</Page>
+		</Dialogue>
+		<DialogueTarget>QUESTIONS</DialogueTarget>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>QUESTIONS_2</Name>
+		<Dialogue>
+			<Page>Brittle_Shard_Answer_2_1</Page>
+			<Page>Brittle_Shard_Answer_2_2</Page>
+		</Dialogue>
+		<DialogueTarget>QUESTIONS</DialogueTarget>
+		
+		<RevealFacts>
+			<FactID>SanBaiMing_BRITTLE_SHARD_2</FactID>
+		</RevealFacts>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>QUESTIONS_3</Name>
+		<Dialogue>
+			<Page>Brittle_Shard_Answer_3_1</Page>
+			<Page>Brittle_Shard_Answer_3_2</Page>
+		</Dialogue>
+		<DialogueTarget>QUESTIONS</DialogueTarget>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>QUESTIONS_4</Name>
+		<Dialogue>
+			<Page>Brittle_Shard_Answer_4_1</Page>
+			<Page>Brittle_Shard_Answer_4_2</Page>
+		</Dialogue>
+		<DialogueTarget>QUESTIONS</DialogueTarget>
+		<SetCondition>TALKED_QUANTUM_MOON</SetCondition>
+	</DialogueNode>
+	
+	<DialogueNode>
+		<Name>QUESTIONS_5</Name>
+		<Dialogue>
+			<Page>Brittle_Shard_Answer_5_1</Page>
+			<Page>Brittle_Shard_Answer_5_2</Page>
+			<Page>Brittle_Shard_Answer_5_3</Page>
+			<Page>Brittle_Shard_Answer_5_4</Page>
+			<Page>Brittle_Shard_Answer_5_5</Page>
+			<Page>Brittle_Shard_Answer_5_6</Page>
+			<Page>Brittle_Shard_Answer_5_7</Page>
+			<Page>Brittle_Shard_Answer_5_8</Page>
+		</Dialogue>
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>Answer_Brittle_Shard_5</Text>
+				<DialogueTarget>QUESTIONS</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+		<RevealFacts>
+			<FactID>SanBaiMing_BRITTLE_SHARD_3</FactID>
+			<FactID>SanBaiMing_QUANTUM_MOON_SPACESHIP_RUMOR</FactID>
+		</RevealFacts>
+	</DialogueNode>
+</DialogueTree>
