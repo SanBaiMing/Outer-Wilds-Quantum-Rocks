@@ -2,7 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/outer-wilds-new-horizons/new-horizons/main/NewHorizons/Schemas/translation_schema.json",
 
   "UIDictionary": {
-    "POPUP_MESSAGE": "Quantum Rocks：\nIt is recommended to play this mod after completing the base game content.\nChat with Slate to begin. Have fun!",
+    "Quantum_Rocks_Popup_Message": "Quantum Rocks：\nIt is recommended to play this mod after completing the base game content.\nChat with Slate to begin. Have fun!",
     "Quantum_Rocks_GameOverText": "You successfully reached the Eye of the Universe via the Quantum Moon.\nThey welcomes you."
   },
 
@@ -27,7 +27,7 @@
     "Ok_Move_On": "Alright, I'll keep an eye out for it.",
     "Good_Luck": "Good luck!",
 
-    "Observatory Shard": "Observatory Shard",
+    "Observatory Shard": "Museum Shard",
     "......": "......",
     "Start_Staring": "*Starts staring at it*",
     "Keep_Staring": "*Keeps staring at it*",
@@ -76,7 +76,7 @@
     "No_More_Question": "I don't have any more questions for now.",
     "Good_Luck_Bye": "Farewell. Good luck to you!",
 
-    "Timber Shard": "Timber Shard",
+    "Timber Shard": "Grove Shard",
     "Try_Communicate": "Hello?",
     "Orange_Let": "<![CDATA[<color=orange>Orange</color>]]> sent me.",
     "Timber_Orange": "<![CDATA[<size=25>The <color=orange>Orange</color> one from the Observatory?</size>]]><![CDATA[<Pause/>]]>Alright, I guess you're telling the truth.",
@@ -95,7 +95,7 @@
     "Timber_Bye": "Goodbye! Give<![CDATA[<color=orange>Orange</color>]]> my regards!",
 
     // Hourglass Twins
-    "Hourglass Shard": "Hourglass Shard",
+    "Hourglass Shard": "Cave Shard",
     "I_Know_You_1": "Stop, don't speak yet.<![CDATA[<Pause/>]]>I know why you're here.",
     "I_Know_You_2": "Forgive my directness, but you don't seem to like rising sand in confined spaces, so I'll make this quick.",
     "Hourglass_Shard_Introduction": "You may call me<![CDATA[<color=yellow>Yellow</color>]]>. It's a pleasure to meet you too.",
@@ -118,7 +118,7 @@
     "Hourglass_Bye": "Farewell! If you need to move quickly through the caves, feel free to come find me!",
 
     // Brittle Hollow
-    "Brittle Shard": "Brittle Shard",
+    "Brittle Shard": "Tower Shard",
     "Try_Talk": "Hello,<![CDATA[<color=orange>Orange</color>]]> said I could talk to you.",
     "Brittle_Orange": "Ah, I see. Very well.",
     "Brittle_Shard_Introduction": "My friends call me Black. Welcome!",
@@ -148,7 +148,7 @@
     "Brittle_Bye": "Farewell! Don't fall into the black hole!",
 
     // Giant's Deep
-    "Giants Shard": "Giant's Shard",
+    "Giants Shard": "Island Shard",
     "Meet_Giants_Shard_1": "Wonderful! Another visitor at last!<![CDATA[<size=25>Wait, I wasn't supposed to say that out loud......</size>]]>",
     "Meet_Giants_Shard_2": "It's alright—I know<![CDATA[<color=orange>Orange</color>]]>.",
     "Meet_Giants_Shard_3": "Oh, good. My apologies, I'm just overexcited. It's been a long time since any new intelligent life has visited here.",
@@ -171,7 +171,7 @@
     "Giants_Bye": "Farewell! I believe we'll meet again soon.",
 
     // Quantum Moon
-    "Hi_Observatory_Shard_1": "Hello there, Observatory Shard!",
+    "Hi_Observatory_Shard_1": "Hello there, Museum Shard!",
     "Observatory_Shard_1_Hi": "Greetings, hatchling. It's good to see you again! It seems you've learned quite a bit about us.",
     "Observatory_Shard_1_0": "Welcome to our humble home. It has been our home for a very long time—at least.",
     "Ask_Observatory_Shard_1": "Any questions?",
